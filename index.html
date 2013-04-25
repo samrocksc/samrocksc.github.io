@@ -4,13 +4,19 @@
     	<link href='http://fonts.googleapis.com/css?family=Lora|Open+Sans|Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
         <title>shoutinginfrench</title>
         <link rel="stylesheet" href="page.css" style="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
     	<div id="header">Header</div>
     	<div id="left-column">Left Column</div>
     	<div id="content">Content holder</div>
     	<div id="footer">Footer</div>
-    	<p>This is where we are going to put the party at</p>
+    	<p id="gay">This is where we are going to put the party at</p>
+    	<div><script>require(["dojo/dom", "dojo/domReady!"], function(dom){
+    var greeting = dom.byId("greeting");
+    greeting.innerHTML += " from Dojo!";
+});</script>
     </body>
 </html>
     
