@@ -1,9 +1,34 @@
 * {
-	font-family: 'Lora', serif;
-	font-family: 'Open Sans', sans-serif;
-	font-family: 'Yanone Kaffeesatz', sans-serif;	
-	border: 2px dotted black;
+	font-family: 'Muli', sans-serif;	
+	border: 1px solid black;
 }
 body {
 
+}
+#container {
+	width: 900px;
+	height: 900px;
+}
+#header {
+	
+	width: 890px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+#left-column {
+	float: left;
+	width: 400px;
+	margin-left: 5px;
+}
+#content {
+	float: left;
+	width: 500px;
+	margin-right: 5px;
+}
+#footer {
+	width: 890px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
 }
