@@ -1,15 +1,11 @@
-* {
-	font-family: 'Muli', sans-serif;	
-}
 div {
     
 }
 body {
-
+    font-family: 'Muli', sans-serif;
 }
 #container {
 	width: 960px;
-	height: 600px;
 	margin: 5px auto 0 auto;
     border: 1px solid black;
 }
@@ -29,10 +25,11 @@ body {
 #content {
 	float: right;
 	width: 540px;
-    height: 375px;
     margin: 0 5px 5px auto;
     border: 1px solid black;
+    height: 375px;
     overflow: auto;
+    
 }
 #footer {
 	width: 950px;
@@ -40,4 +37,6 @@ body {
     clear: left;
 	margin: 5px 5px 5px 5px;
     border: 1px solid black;
+}
+.equal {
 }

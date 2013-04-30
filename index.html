@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    	<link href='//fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         <title>shoutinginfrench</title>
         <link rel="stylesheet" href="page.css" style="text/css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
     <div id="container">
     	<div id="header">
             This is the header
         </div>
-        <div id="left-column">
+        <div id="left-column" class="equal">
             <h3>Menu</h3>
             <ul class="menu">
-                <li>Menu 1</li>
+                <li><button id="equal">Equalize</button></li>
                 <li>Menu 2</li>
                 <li>Menu 3</li>
             </ul>
         </div>
-        <div id="content">
+        <div id="content" class="equal">
             <h2>Sample Text #1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie ipsum in nunc vehicula molestie. Vivamus eu turpis sed nunc lacinia gravida. Fusce at diam massa, non fermentum est. Curabitur adipiscing velit at ligula condimentum nec scelerisque mauris lobortis. Mauris sit amet turpis ante. Vivamus porttitor tincidunt condimentum. Cras ligula ligula, lobortis vitae tincidunt sit amet, eleifend vel elit. Nunc tincidunt porttitor neque, sit amet dictum metus dictum sed. Vestibulum tempus velit sapien. Proin laoreet felis sed metus aliquet mattis. Nulla ullamcorper magna vel lacus ullamcorper at pretium ligula lobortis. Nulla orci justo, porttitor ac feugiat at, malesuada in turpis.</p>
             <h2>Sample Text #1</h2>
@@ -31,6 +30,11 @@
         </div>
     </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            $(".equal").click(function() { $(".equal").css("height","auto")});
+        });
+    </script>
 </html>
     
     
