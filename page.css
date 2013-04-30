@@ -2,42 +2,42 @@
 	font-family: 'Muli', sans-serif;	
 }
 div {
-    border: 1px solid black;
     
 }
 body {
 
 }
 #container {
-	width: 900px;
+	width: 960px;
 	height: 600px;
 	margin: 5px auto 0 auto;
+    border: 1px solid black;
 }
 #header {
-	
-	width: 890px;
+	border: 1px solid black;
+	width: 950px;
     height: 150px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 5px 5px 5px;
 }
 #left-column {
 	float: left;
 	width: 400px;
-    height: 400px;
-	margin-left: 5px;
-    margin-bottom: 5px;
+    height: 375px;
+    margin: 0 auto 5px 5px;
+    border: 1px solid black;
 }
 #content {
 	float: right;
-	width: 486px;
-    height: 400px;
-	margin-right: 5px;
-    margin-bottom: 5px;
+	width: 540px;
+    height: 375px;
+    margin: 0 5px 5px auto;
+    border: 1px solid black;
+    overflow: auto;
 }
 #footer {
-	width: 890px;
-    height: 100px;
-	margin: 0 auto 5px auto;
+	width: 950px;
+    height: 50px;
+    clear: left;
+	margin: 5px 5px 5px 5px;
+    border: 1px solid black;
 }
