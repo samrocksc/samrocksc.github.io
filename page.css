@@ -12,7 +12,7 @@ body {
 }
 #header {
 	border: 1px solid black;
-	width: 950px;
+	width: 948px;
     height: 150px;
     margin: 5px 5px 5px 5px;
 }
@@ -25,18 +25,18 @@ body {
 }
 #content {
 	float: right;
-	width: 540px;
-    margin: 0 5px 5px auto;
+	width: 535px;
+    margin: 0 5px 5px 0px;
     border: 1px solid black;
     min-height: 375px;
 }
 #footer {
-	position: fixed;
-    clear: left;
+    clear: right;
     bottom: 5px;
-    width: 950px;
+    width: 940px;
     height: 50px;
 	margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
     border: 1px solid black;
 }
 .equal {
