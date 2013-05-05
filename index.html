@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<link href='//fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         <title>shoutinginfrench</title>
         <link rel="stylesheet" href="page.css" style="text/css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="scripts/menu.js"></script>
     </head>
     <body>
     <div id="container">
@@ -12,12 +13,37 @@
             This is the header
         </div>
         <div id="left-column">
-            <h3>Menu</h3>
-            <ul class="menu">
-                <li><button id="equal">Equalize</button></li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-            </ul>
+            <h3>Learn</h3>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a>
+                    <li><a href="#">About</a>
+                        <ul class="active">
+                            <li><a href="#">Sam</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Businesses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Social</a>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Business</a>
+                        <ul>
+                            <li><a href="#">Mud Dauber Coffee</a></li>
+                            <li><a href="#">Lo Fi Coffee/a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Links</a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                </ul>
         </div>
         <div id="content" class="equal">
             <h2>Sample Text #1</h2>

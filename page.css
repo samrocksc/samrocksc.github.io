@@ -3,6 +3,7 @@ div {
 }
 body {
     font-family: 'Muli', sans-serif;
+    font-size: 75%;
 }
 #container {
 	width: 960px;
@@ -41,3 +42,36 @@ body {
 }
 .equal {
 }
+
+.accordion-toggle {
+  display: block;
+}
+/*Menu CSS */
+#menu,
+#menu ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+ 
+#menu li {
+  cursor:pointer;
+}
+ 
+#menu li a {
+  text-decoration:none;
+}
+ 
+#menu > li > a {
+  padding:2px 10px;
+  font-weight:bold;
+}
+ 
+#menu li li {
+  cursor:auto;
+  border:0;
+  padding:0 14px;
+  background-color:#fff;
+}
+/*End Menu CSS*/
+
