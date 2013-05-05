@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
  
   $('#menu > li > ul')
     .hide()
@@ -14,12 +14,15 @@ $(function(){
 /*loading ajax function*/
 $(document).ready(function(){
   $(".resume").click(function(){
-        $("#content").load("data/resume.html");
+      $("#content").load("data/resume.html");
   });
   $(".aboutsam").click(function(){
-        $("#content").load("data/about.html"); 
+      $("#content").load("data/about.html"); 
   });
     $(".home").click(function(){
-        $("#content").load("data/home.html"); 
+      $("#content").load("data/home.html"); 
+  });
+  $(".twitter").click(function(){
+
   });
 });
