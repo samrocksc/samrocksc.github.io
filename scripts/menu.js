@@ -23,6 +23,9 @@ $(document).ready(function(){
     $("#content").load("data/home.html"); 
   });
   $(".twitter").click(function(){
-    $("#content").load("data/twitter.html")
+    $("#content").load("data/twitter.html");
+  });
+  $(".fantasy").click(function(){
+     $('#content').load("data/fantasy.html"); 
   });
 });
