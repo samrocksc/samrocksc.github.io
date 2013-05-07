@@ -91,9 +91,6 @@ a:hover{
     position: relative;
 }
 .tweetCloud {
-    width: -webkit-calc(100% - 8px);
-    width: -moz-calc(100% - 8px);
-    width: calc(100% - 8px);
     margin: 9px 4px 9px 4px;
     position: relative;
     background: #FFF;
@@ -105,23 +102,11 @@ a:hover{
 #tweetArrow {
     height: 10px;
     width: 10px;
-    margin: -10px 0px 0px 20px;
-    position: absolute;
-    /*background: url("http://i.imgur.com/l8M5cyH.png");*/
-    z-index: 5;
+    margin: 0px 0px 0px 0px;
 }
 #tweetText {
-    width: -webkit-calc(100% - 10px);
-    width: -moz-calc(100% - 10px);
-    width: calc(100% - 10px);
-    margin: 5px;
-    font-family:'Droid Sans', sans-serif;
+    margin: 5 5px 5px 5px;
     font-size: 12px;
     font-weight: 400;
     color: #888;
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    -ms-user-select: text;
-    -o-user-select: text;
-    user-select: text;
 }
