@@ -81,23 +81,15 @@ a:hover{
 
 /*tweets*/
 #tweetFeed {
-    margin: 185px 25px 25px 25px;
-    height: -webkit-calc(100% - 155px);
-    height: -moz-calc(100% - 155px);
-    height: calc(100% - 155px);
-    width: -webkit-calc(100% - 50px);
-    width: -moz-calc(100% - 50px);
-    width: calc(100% - 50px);
-    position: relative;
+    margin: auto 5px auto 5px;
 }
 .tweetCloud {
     margin: 9px 4px 9px 4px;
     position: relative;
     background: #FFF;
     border: solid 1px;
-    border-color: #CCC;
+    border-color: black;
     border-radius: 5px;
-    z-index: 4;
 }
 #tweetArrow {
     height: 10px;
@@ -106,7 +98,4 @@ a:hover{
 }
 #tweetText {
     margin: 5 5px 5px 5px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #888;
 }
