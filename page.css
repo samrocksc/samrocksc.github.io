@@ -80,18 +80,6 @@ a:hover{
 /*End Menu CSS*/
 
 /*tweets*/
-#tweetFeed {
-    margin: auto 5px auto 5px;
-}
-.tweetCloud {
-    margin: 9px 4px 9px 4px;
-    background: #FFF;
-}
-#tweetArrow {
-    height: 10px;
-    width: 10px;
-    margin: 0px 0px 0px 0px;
-}
-#tweetText {
-    margin: 5 5px 5px 5px;
+.tweets {
+    list-style: none;
 }
