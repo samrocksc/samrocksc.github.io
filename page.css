@@ -85,11 +85,7 @@ a:hover{
 }
 .tweetCloud {
     margin: 9px 4px 9px 4px;
-    position: relative;
     background: #FFF;
-    border: solid 1px;
-    border-color: black;
-    border-radius: 5px;
 }
 #tweetArrow {
     height: 10px;
