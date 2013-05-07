@@ -16,6 +16,9 @@ body {
     height: 75px;
     margin: 5px 5px 5px 5px;
 }
+.insideheader {
+    margin: 5px auto 5px auto;
+}
 #left-column {
 	float: left;
 	width: 200px;
