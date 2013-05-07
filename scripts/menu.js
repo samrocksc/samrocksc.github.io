@@ -40,7 +40,7 @@ $(document).ready(function () {
         success: function (data) {
             console.log(data);
             $.each(data, function (i, item) {
-                $("#tweetFeed").append("<div id='tweetText'>" + item.text + "</div>");
+                $("#tweetFeed").append("<li class='tweet'" + item.text + "</li>");
             })
         }
     });
