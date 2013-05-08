@@ -11,7 +11,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
-/*loading ajax function*/
+/*loading ajax function
 $(document).ready(function(){
   $(".resume").click(function(){
     $("#content").load("data/resume.html");
@@ -29,4 +29,10 @@ $(document).ready(function(){
      $('#content').load("data/fantasy.html"); 
   });
 });
+*/
 /*Twitter API get*/
+$(document).ready(function(){
+  $("#menu").onLoad(function(){
+    $(this).load("data/menu.html")
+  });
+});
