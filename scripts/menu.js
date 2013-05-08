@@ -30,18 +30,3 @@ $(document).ready(function(){
   });
 });
 /*Twitter API get*/
-$(document).ready(function () {
-
-    var k = "http://api.twitter.com/1/statuses/user_timeline.json?screen_name=samrocksc&include_rts=1&count=5&jsoncallback=";
-
-    $.ajax({
-        dataType: 'jsonp',
-        url: k,
-        success: function (data) {
-            console.log(data);
-            $.each(data, function (i, item) {
-                $("#tweetFeed").append("<li class='tweet'>" + item.text + "</li>");
-            })
-        }
-    });
-});
