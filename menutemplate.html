@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handlebars.js example</title>
+</head>
+<body>
+    <div id="placeholder">This will get replaced by handlebars.js</div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+    <script id="myTemplate" type="text/x-handlebars-template">
+        {{#links}}
+        <li><a href="{{href}}">{{name}}</a></li>
+        {{/links}}
+    </script>
+    <script type="text/javascript">
+        var source = document.getElementById("myTemplate").innerHTML;
+        var template = Handlebars.compile(source);
+        var data = {
+            links: [
+            { "name": "Home", "href": "index.html" },
+            { "name": "About", "href": "#" },
+            { "name": "Sam", "href": "about.html" },
+            { "name": "Resume", "href": "resume.html" },
+            { "name": "Businesses", "href": "businesses.html" },
+            { "name": "Blog", "href": "blog.html" },
+            { "name": "Writings", "href": "writings.html" },
+            { "name": "Fantasy", "href": "fantasy.html" },
+            { "name": "Rants", "href": "rants.html" },
+            { "name": "Publications", "href": "publications.html" },
+            { "name": "Coffee", "href": "coffee.html" },
+            { "name": "Business", "href": "business.html" },
+            { "name": "Mud Dauber Coffee", "href": "muddauber.html" },
+            { "name": "Lo Fi Coffee", "href": "lofi.html" },
+            { "name": "Links", "href": "links.html" },
+            { "name": "Contact", "href": "contact.html" },
+            ]
+        };
+        document.getElementById("placeholder").innerHTML = template(data);
+    </script>
+</body>
+</html>
