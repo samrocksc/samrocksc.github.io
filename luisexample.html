@@ -9,13 +9,13 @@
     <div id="placeholder">This will get replaced by handlebars.js</div>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
     <script id="myTemplate" type="text/x-handlebars-template">
-        {{#links}}
         <ul id="menu">
+        {{#links}}
         <li><a href="{{href}}">{{name}}</a>
         <ul>{{#each sublinks}}<li>{{name}} {{link}}</li>{{/each}}</ul>
         </li>
-        </ul>
         {{/links}}
+        </ul>
     </script>
     <script type="text/javascript">
         var source = document.getElementById("myTemplate").innerHTML;
