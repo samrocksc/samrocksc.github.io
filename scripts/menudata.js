@@ -1,4 +1,4 @@
-    <script type="text/javascript">
+$(document).(ready(function(){
         var source = document.getElementById("myTemplate").innerHTML;
         var template = Handlebars.compile(source);
         var data = {
@@ -13,4 +13,4 @@
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);
-    </script>
+});
