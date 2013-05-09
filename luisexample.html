@@ -41,17 +41,10 @@
         var template = Handlebars.compile(source);
         var data = {
             links: [
-            { "name": "Home", "href": "index.html" , "sublinks" : [{"name": "sub Home", "href": "index.html"}, {"name": "sub Home 2", "href": "index2.html"} ]},
-            { "name": "About", "href": "#", "sublinks" : [{"name": "Sam", "href": "about.html"}, {"name": "Resume", "href": "resume.html"}]},
-            { "name": "Sam", "href": "about.html" },
-            { "name": "Resume", "href": "resume.html" },
-            { "name": "Businesses", "href": "businesses.html" },
+            { "name": "Home", "href": "index.html"},
+            { "name": "About", "href": "#", "sublinks" : [{"name": "Sam", "href": "about.html"}, {"name": "Resume", "href": "resume.html"}, {"name": "Businesses", "href": "businesses.html"}]},
             { "name": "Blog", "href": "blog.html" },
-            { "name": "Writings", "href": "writings.html" },
-            { "name": "Fantasy", "href": "fantasy.html" },
-            { "name": "Rants", "href": "rants.html" },
-            { "name": "Publications", "href": "publications.html" },
-            { "name": "Coffee", "href": "coffee.html" },
+            { "name": "Writings", "href": "#", "sublinks" : [{"name": "Fantasy", "href": "fantasy.html"}, {"name": "Rants" "href": "rants.html"}, {"name": "Coffee", "href": "coffee.html"}] },
             { "name": "Business", "href": "business.html" },
             { "name": "Mud Dauber Coffee", "href": "muddauber.html" },
             { "name": "Lo Fi Coffee", "href": "lofi.html" },
