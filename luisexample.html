@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Handlebars.js example</title>
+    <title>handlebars layout</title>
     <script src="scripts/menu.js"></script>
     <link rel="stylesheet" href="page.css" style="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -41,8 +41,8 @@
         var template = Handlebars.compile(source);
         var data = {
             links: [
-            { "name": "Home", "href": "index.html" , "sublinks" : [{"name": "sub Home", "href": "indexs.html"}, {"name": "sub Home 2", "href": "index2.html"} ]},
-            { "name": "About", "href": "#" },
+            { "name": "Home", "href": "index.html" , "sublinks" : [{"name": "sub Home", "href": "index.html"}, {"name": "sub Home 2", "href": "index2.html"} ]},
+            { "name": "About", "href": "#", "sublinks" : [{"name": "Sam", "href": "about.html"}, {"name": "Resume", "href": "resume.html"}]},
             { "name": "Sam", "href": "about.html" },
             { "name": "Resume", "href": "resume.html" },
             { "name": "Businesses", "href": "businesses.html" },
