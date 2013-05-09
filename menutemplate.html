@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Handlebars.js example</title>
-</head>
-<body>
-    <div id="placeholder">This will get replaced by handlebars.js</div>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
-    <script id="myTemplate" type="text/x-handlebars-template">
-        {{#links}}
-        <li><a href="{{href}}">{{name}}</a></li>
-        {{/links}}
-    </script>
-    <script type="text/javascript">
-        var source = document.getElementById("myTemplate").innerHTML;
-        var template = Handlebars.compile(source);
-        var data = {
-            links: [
-            { "name": "Home", "href": "index.html" },
-            { "name": "About", "href": "#" },
-            { "name": "Sam", "href": "about.html" },
-            { "name": "Resume", "href": "resume.html" },
-            { "name": "Businesses", "href": "businesses.html" },
-            { "name": "Blog", "href": "blog.html" },
-            { "name": "Writings", "href": "writings.html" },
-            { "name": "Fantasy", "href": "fantasy.html" },
-            { "name": "Rants", "href": "rants.html" },
-            { "name": "Publications", "href": "publications.html" },
-            { "name": "Coffee", "href": "coffee.html" },
-            { "name": "Business", "href": "business.html" },
-            { "name": "Mud Dauber Coffee", "href": "muddauber.html" },
-            { "name": "Lo Fi Coffee", "href": "lofi.html" },
-            { "name": "Links", "href": "links.html" },
-            { "name": "Contact", "href": "contact.html" },
-            ]
-        };
-        document.getElementById("placeholder").innerHTML = template(data);
-    </script>
-</body>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        <title>shoutinginfrench</title>
+        <link rel="stylesheet" href="page.css" style="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+        <script src="scripts/menu.js"></script>
+    </head>
+    <body>
+    <div id="container">
+    	<div id="header">
+            header time
+        </div>
+        <div id="left-column">
+            <h3>Learn</h3>
+                <ul id="menu">
+                    <li><a href="index.html" class="home">Home</a>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="about.html">Sam</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="#">Businesses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Social</a>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Writings</a>
+                        <ul>
+                            <li><a href="#">Fantasy</a></li>
+                            <li><a href="#">Rants</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Coffee</a></li>
+                        </ul>
+                    <li>
+                    <li><a href="#">Business</a>
+                        <ul>
+                            <li><a href="#">Mud Dauber Coffee</a></li>
+                            <li><a href="#">Lo Fi Coffee</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Links</a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                </ul>
+        </div>
+        <div id="content">
+            <h2>shoutinginfrench.com</h2>
+            <p>
+                This page is being designed as a self-built website to re-learn web design by Sam Clark.  The goal is to be able to learn how to do all of the web-design involved in the creation of a website.
+            </p>
+            <p>Emphasis is being placed on the usage of javascript and jQuery to re learn web-design.
+            </p>
+        </div>
+    <div id="footer"><a href="http://www.shoutinginfrench.com">2012 shoutinginfrench</a> || Sam Clark || <a href="mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com">samrocksc@gmail.com</a></div>
+    </div>
+    
+    </body>
 </html>
+    
+    
