@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>shoutinginfrench</title>
+    <script src="scripts/menu.js"></script>
+    <link rel="stylesheet" href="page.css" style="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<div id="placeholder">handlebars</div>
+<script id="myTemplate" type="text/x-handlebars-template">
+	{{#links}}<div class="{{class}}">{{{content}}}</div>{{/links}}
+</script>
+<script type="text/javascript">
         var source = document.getElementById("myTemplate").innerHTML;
         var template = Handlebars.compile(source);
         var data = {
@@ -16,19 +33,4 @@
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);
-
-Home
-About
-Sam
-Resume
-Businesses
-Blog
-Writings
-Fantasy
-Rants
-Coffee
-Business
-Mud Dauber Coffee
-Lo Fi Coffee
-Links
-Contact
+</script>
