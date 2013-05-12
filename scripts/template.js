@@ -1,3 +1,4 @@
+<script src="scripts/template.js" id="myTemplate" type="text/x-handlebars-template">
         <div id="container">
         {{#header}}<div id="header"><a href="{{href}}">{{name}}</a></div>{{/header}}
         <div id="left-column">
@@ -19,4 +20,5 @@
         </div>
         <div id="footer"><a href="http://www.shoutinginfrench.com">2012 shoutinginfrench</a> || Sam Clark || <a href="mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com">samrocksc@gmail.com</a></div>
         </div>
-        </div>
+        </div>    
+</script>
