@@ -15,7 +15,7 @@
             {"name": "s h o u t i n g i n f r e n c h", "href": "index.html"},
             ],
             footer: [
-            {"content": "s h o u t i n g i n f r e n c h", "href": "index.html"},
+            {"footer": "s h o u t i n g i n f r e n c h", "href": "index.html"},
             ],
         };
         document.getElementById("placeholder").innerHTML = template(data);
