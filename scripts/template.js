@@ -2,13 +2,14 @@
         var template = Handlebars.compile(source);
         var data = {
             links: [
-            { "name": "Home", "href": "index.html"},
-            { "name": "About", "href": "#", "sublinks" : [{"name": "Sam", "href": "about.html"}, {"name": "Resume", "href": "resume.html"}, {"name": "Businesses", "href": "businesses.html"}]},
-            { "name": "Blog", "href": "blog.html" },
-            { "name": "Writings", "href": "#", "sublinks" : [{"name": "Fantasy", "href": "fantasy.html"}, {"name": "Rants", "href": "rants.html"}, {"name": "Coffee", "href": "coffee.html"}] },
-            { "name": "Business", "href": "business.html", "sublinks" : [{"name": "Mud Dauber Coffee", "href": "muddauber.html"}, {"name": "Lo Fi Coffee", "href": "lofi.html"}] },
-            { "name": "Links", "href": "links.html" },
-            { "name": "Contact", "href": "contact.html" },
+            { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Home</a>"},
+            { "class": "accordionButton", "title": "", "content": "About"},
+            { "class": "accordionContent", "title": "", "content": "<a href='about.html'>Sam</a><br/><a href='resume.html'>Resume</a><br/><a href'businesses.html'>Businesses</a>"},
+            { "class": "accordionLink", "title": "", "content": "<a href='blog.html'>Blog</a>"},
+            { "class": "accordionButton", "title": "", "content": "Writings"},
+            { "class": "accordionContent", "title": "", "content": "<a href='about.html'>Rants</a><br/><a href='resume.html'>Coffee</a><br/><a href'businesses.html'>Fantasy</a>"},
+            { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Links</a>"},
+            { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Contact</a>"},
             ],
             header: [
             {"name": "s h o u t i n g i n f r e n c h", "href": "index.html"},

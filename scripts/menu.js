@@ -11,22 +11,16 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
-/*loading ajax function
-$(document).ready(function(){
-  $(".resume").click(function(){
-    $("#content").load("data/resume.html");
+/*second menu*/
+$(document).ready(function() {
+  
+  /*Making Links slide*/
+  $('div.accordionButton').click(function() {
+    $('div.accordionContent').slideUp('normal');  
+    $(this).next().slideDown('normal');
   });
-  $(".aboutsam").click(function(){
-    $("#content").load("data/about.html"); 
-  });
-  $(".home").click(function(){
-    $("#content").load("data/home.html"); 
-  });
-  $(".twitter").click(function(){
-    $("#content").load("data/twitter.html");
-  });
-  $(".fantasy").click(function(){
-     $('#content').load("data/fantasy.html"); 
-  });
+  
+  /*hiding divs on load*/
+  $("div.accordionContent").hide();
+  /*Load class for regular links*/
 });
-*/
