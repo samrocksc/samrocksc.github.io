@@ -11,7 +11,7 @@
             { "name": "Contact", "href": "contact.html" },
             ],
             header: [
-            {"name": "shoutinginfrench", "href": "index.html"},
+            {"name": "s h o u t i n g i n f r e n c h", "href": "index.html"},
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);
