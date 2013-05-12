@@ -11,7 +11,7 @@
             { "name": "Contact", "href": "contact.html" },
             ],
             header: [
-            {"name": "s h o u t i n g i n f r e n c h", "href": "index.html"},
+            {"name": "<h1>s h o u t i n g i n f r e n c h</h1>", "href": "index.html"},
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);
