@@ -1,0 +1,58 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>jQuery Accordion Style DIV Menu</title>
+<link href="style/format.css" rel="stylesheet" type="text/css" />
+<link href="style/text.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	/*Making Links slide*/
+	$('div.accordionButton').click(function() {
+		$('div.accordionContent').slideUp('normal');	
+		$(this).next().slideDown('normal');
+	});
+	
+	/*hiding divs on load*/
+	$("div.accordionContent").hide();
+	/*Load class for regular links*/
+});
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="accordionLink"><a href="simplelink.html">Simple Link</a></div>
+		<div class="accordionButton">Button 1 Content</div>
+		<div class="accordionContent">Content 1<br /><br /><br /><br /><br /><br /><br /><br />Long Example</div>
+		<div class="accordionButton">Button 2 Content</div>
+		<div class="accordionContent">Content 2<br /><br /><br /><br /><br />Medium Example</div>
+		<div class="accordionButton">Button 3 Content</div>
+		<div class="accordionContent">Content 1<br />Short Example</div>
+		<div class="accordionButton">Button 4 Content</div>
+		<div class="accordionContent">Content 4<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Extra Long Example</div>
+	</div>
+	<script type="text/Javascript">
+		        var source = document.getElementById("myTemplate").innerHTML;
+        var template = Handlebars.compile(source);
+        var data = {
+            links: [
+            { "name": "Home", "href": "index.html"},
+            { "name": "About", "href": "#", "sublinks" : [{"name": "Sam", "href": "about.html"}, {"name": "Resume", "href": "resume.html"}, {"name": "Businesses", "href": "businesses.html"}]},
+            { "name": "Blog", "href": "blog.html" },
+            { "name": "Writings", "href": "#", "sublinks" : [{"name": "Fantasy", "href": "fantasy.html"}, {"name": "Rants", "href": "rants.html"}, {"name": "Coffee", "href": "coffee.html"}] },
+            { "name": "Business", "href": "business.html", "sublinks" : [{"name": "Mud Dauber Coffee", "href": "muddauber.html"}, {"name": "Lo Fi Coffee", "href": "lofi.html"}] },
+            { "name": "Links", "href": "links.html" },
+            { "name": "Contact", "href": "contact.html" },
+            ],
+            header: [
+            {"name": "s h o u t i n g i n f r e n c h", "href": "index.html"},
+            ]
+        };
+        document.getElementById("placeholder").innerHTML = template(data);
+	</script>
+</body>
+</html>
