@@ -4,10 +4,10 @@
             links: [
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Home</a>"},
             { "class": "accordionButton", "title": "", "content": "About"},
-            { "class": "accordionContent", "title": "", "content": "<a href='about.html'>Sam</a><br/><a href='resume.html'>Resume</a><br/><a href'businesses.html'>Businesses</a>"},
+            { "class": "accordionContent", "title": "", "content": "<a href='about.html'>Sam</a><br/><a href='resume.html'>Resume</a><br/><a href='businesses.html'>Businesses</a>"},
             { "class": "accordionLink", "title": "", "content": "<a href='blog.html'>Blog</a>"},
             { "class": "accordionButton", "title": "", "content": "Writings"},
-            { "class": "accordionContent", "title": "", "content": "<a href='about.html'>Rants</a><br/><a href='resume.html'>Coffee</a><br/><a href'businesses.html'>Fantasy</a>"},
+            { "class": "accordionContent", "title": "", "content": "<a href='rants.html'>Rants</a><br/><a href='coffee.html'>Coffee</a><br/><a href='fantasy.html'>Fantasy</a>"},
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Links</a>"},
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Contact</a>"},
             ],
@@ -20,6 +20,3 @@
         };
         document.getElementById("placeholder").innerHTML = template(data);
 
-$(document).ready(function(){
-    $( ".tumblr" ).embedTumblr("http://api.tumblr.com/v2/blog/myblog.tumblr.com/posts?api_key=BLWUwRnzhaCy4zlibEnhQ8qn4BTKiWFnG73oxTUvWgh434jIDM");
-})
