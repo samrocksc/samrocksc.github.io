@@ -7,10 +7,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/tumblrapi.js"></script>
 </head>
 <body>
 <div id="container">
-    <div id="placeholder">This will get replaced by handlebars.js</div>
+    <div id="placeholder">handlebars</div>
         <script id="myTemplate" type="text/x-handlebars-template">
     {{#header}}<div id="header"><a href="{{href}}"><h1>{{name}}</h1></a></div>{{/header}}
     <div id="menu">
@@ -18,13 +19,9 @@
             </div>
         
     <div id="content">
-        <div id="entries">
-            <script type="text/javascript" src="http://assets.tumblr.com/javascript/tumblelog.js"></script>
-            <script type="text/javascript" src="http://shoutinginfrench.tumblr.com/api/read/js"></script>
-      </div>
+        <div class="tumblr"></div>
     </div>
-    <div id="footer">{{#footer}}{{{content}}}{{/footer}}
-    </div>
+    <div id="footer">{{#footer}}{{{content}}}{{/footer}}</div>
 </div>    
 </script>
     <script src="scripts/template.js" type="text/javascript"></script>

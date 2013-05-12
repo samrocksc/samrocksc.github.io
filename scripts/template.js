@@ -19,3 +19,7 @@
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);
+
+$(document).ready(function(){
+    $( ".tumblr" ).embedTumblr("http://api.tumblr.com/v2/blog/myblog.tumblr.com/posts?api_key=BLWUwRnzhaCy4zlibEnhQ8qn4BTKiWFnG73oxTUvWgh434jIDM");
+})
