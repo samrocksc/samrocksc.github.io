@@ -12,7 +12,7 @@
 <div id="container">
     <div id="placeholder">This will get replaced by handlebars.js</div>
         <script id="myTemplate" type="text/x-handlebars-template">
-    <div id="header">{{#header}}<a href="{{href}}"><h1>{{name}}</h1></a>{{/header}}</div>
+    {{#header}}<div id="header"><a href="{{href}}"><h1>{{name}}</h1></a></div>{{/header}}
     <div id="menu">
                 {{#links}}<div class="{{class}}">{{{content}}}</div>{{/links}}
             </div>
@@ -25,8 +25,7 @@
             <p>Emphasis is being placed on the usage of javascript and jQuery to re learn web-design.
             </p>
     </div>
-    <div id="footer">
-        <a href="http://www.shoutinginfrench.com">2012 shoutinginfrench</a> || Sam Clark || <a href="mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com">samrocksc@gmail.com</a></div>
+    {{#footer}}<div id="{{{content}}}"></div>{{/footer}}
     </div>
 </div>    
 </script>
