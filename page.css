@@ -8,8 +8,8 @@ body {
 #container {
 	width: 960px;
 	margin: 5px auto 0 auto;
-    border: 1px solid black;
-    overflow-x: auto;
+  border: 1px solid black;
+  overflow-x: auto;
 }
 #header {
 	width: 948px;
@@ -41,13 +41,12 @@ body {
 }
 /*Links*/
 a:link{
-    
+    color: black;
 }
 a:visited{
-    
+    color: black
 }
 a:hover{
-    
 }
 /*Menu CSS */
 #menu,
@@ -79,7 +78,4 @@ a:hover{
 }
 /*End Menu CSS*/
 
-/*tweets*/
-.tweets {
-    list-style: none;
-}
+/*Footer CSS*/
