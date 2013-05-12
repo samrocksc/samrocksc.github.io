@@ -1,23 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>shoutinginfrench</title>
-    <script src="scripts/menu.js"></script>
-    <link rel="stylesheet" href="page.css" style="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
-    <script src="scripts/menu.js"></script>
-</head>
-<body>
-<div id="container">
-    <div id="placeholder">This will get replaced by handlebars.js</div>
-        <script id="myTemplate" type="text/x-handlebars-template">
-    {{#header}}<div id="header"><a href="{{href}}"><h1>{{name}}</h1></a></div>{{/header}}
-    <div id="menu">
-                {{#links}}<div class="{{class}}">{{{content}}}</div>{{/links}}
-            </div>
+    <head>
         
-    <div id="content">
+    </head>
+    <body>
         <h1>Sam Clark</h1>
         <p>840 N. 2nd Ave APT A<br/>
         Phoenix, AZ 85003<br/>
@@ -94,11 +80,5 @@
                 
             </ul>
         </p>
-    </div>
-    <div id="footer">{{#footer}}{{{content}}}{{/footer}}
-    </div>
-</div>    
-</script>
-    <script src="scripts/template.js" type="text/javascript"></script>
-</body>
+    </body>
 </html>
