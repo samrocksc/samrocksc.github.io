@@ -50,6 +50,7 @@ body {
 /*Links*/
 a:link{
     color: black;
+    text-decoration: none;
 }
 a:visited{
     color: black
