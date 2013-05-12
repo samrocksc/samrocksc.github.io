@@ -32,8 +32,8 @@ body {
 #menu {
 	float: left;
 	width: 200px;
-    height: 375px;
-    margin: 0 auto 5px 5px;
+  height: 375px;
+  margin: 0 auto 5px 5px;
 }
 .accordionButton {  
   width: 800px;
@@ -51,12 +51,12 @@ body {
 
 /*Footer CSS*/
 #footer {
-    clear: right;
-    bottom: 5px;
-    width: 940px;
-    height: 50px;
+  clear: right;
+  bottom: 5px;
+  width: 940px;
+  height: 50px;
 	margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 /*Links*/
 a:link{
