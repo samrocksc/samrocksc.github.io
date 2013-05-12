@@ -7,6 +7,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
     <script type="text/javascript">
+    	$(document).ready(function() {
+	
+	/*Making Links slide*/
+	$('div.accordionButton').click(function() {
+		$('div.accordionContent').slideUp('normal');	
+		$(this).next().slideDown('normal');
+	});
+	
+	/*hiding divs on load*/
+	$("div.accordionContent").hide();
+	/*Load class for regular links*/
+});
     </script>
 </head>
 
