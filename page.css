@@ -68,6 +68,31 @@ a:visited{
 }
 a:hover{
 }
+/*smover CSS*/
+@charset "utf-8";
+
+.smover {
+    border: 3px solid lightgrey;
+	padding: 10px;
+}
+
+.smover ul {
+	list-style: none;
+	margin-top: 10px;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.smover ul li {
+	float: left;
+}
+
+.smover ul li a {
+	display: block;
+	margin-top: 5px;
+	padding: 5px 5px 0;
+}
 
 
 
