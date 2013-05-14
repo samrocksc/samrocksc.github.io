@@ -19,6 +19,7 @@ body {
 }
 #header h1 {
   font-size: 325%;
+  padding: 0px auto 0px auto;
   font-weight: bold;
 }
 #header h1 > a {
