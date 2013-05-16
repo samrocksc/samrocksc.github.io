@@ -12,10 +12,10 @@
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Contact</a>"},
             ],
             header: [
-            {"content": "<a href='http://www.shoutinginfrench.com'><h1>/ s h o u t i n g i n f r e n c h /<img src='images/header.png'/></h1></a>"}
+            {"content": "<a href='index.html'><h1>/ s h o u t i n g i n f r e n c h /<img src='images/header.png'/></h1></a>"}
             ],
             footer: [ 
-            {"content": "<a href='http://www.shoutinginfrench.com'>2012 shoutinginfrench</a> || Sam Clark || <a href='mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com'>samrocksc@gmail.com</a>"}
+            {"content": "<a href='index.html'>2012 shoutinginfrench</a> || Sam Clark || <a href='mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com'>samrocksc@gmail.com</a>"}
             ]
         };
         document.getElementById("placeholder").innerHTML = template(data);

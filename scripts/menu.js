@@ -47,15 +47,3 @@ $(document).ready(function() {
 $(document).ready(function(){
     $( ".tumblr" ).embedTumblr("http://api.tumblr.com/v2/blog/shoutinginfrench.tumblr.com/posts?api_key=BLWUwRnzhaCy4zlibEnhQ8qn4BTKiWFnG73oxTUvWgh434jIDM");
 });
-
-/*Smover*/
-$(document).ready(function() {
-
-	$('#share-page').smover();
-
-	$('#send-document').smover({
-		fillerText    : ' to ',
-		mouseoutDelay : 3000
-	});
-
-});
