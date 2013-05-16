@@ -33,7 +33,7 @@ body {
 }
 /*Menu CSS */
 #menu {
-	float: left;
+    float: left;
 	width: 100px;
   height: 375px;
   margin: 0 auto 5px 5px;

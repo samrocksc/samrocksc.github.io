@@ -7,6 +7,8 @@
             "copyright":"shoutinginfrench 2013",
             "email":"samrocksc@gmail.com",
             "showemail":"samrocksc at gmail.com",
+            "authorname":"Sam Clark",
+            
             
                 
             links: [
@@ -18,6 +20,9 @@
             { "class": "accordionContent", "title": "", "content": "<a href='rants.html'>Rants</a><br/><a href='coffee.html'>Coffee</a><br/><a href='fantasy.html'>Fantasy</a>"},
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Links</a>"},
             { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Contact</a>"},
+            ],
+            links2: [
+            
             ],
             header: [
             {"content": "<a href='index.html'><h1>/ s h o u t i n g i n f r e n c h /<img src='images/header.png'/></h1></a>"}
