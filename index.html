@@ -11,7 +11,7 @@
 <div id="container">
     <div id="placeholder">This will get replaced by handlebars.js</div>
         <script id="myTemplate" type="text/x-handlebars-template">
-    <div id="header"><a href="{{index}}"><h1>{{titletext}}</h1></a><img src="images/{{headerimg}}"/>
+    <div id="header"><a href="{{index}}"><h1>{{titletext}}<img src="images/{{headerimg}}"/></h1></a>
     </div>
     <div id="menu">
                 {{#links}}<div class="{{class}}">{{{content}}}</div>{{/links}}

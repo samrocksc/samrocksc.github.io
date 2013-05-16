@@ -10,12 +10,14 @@ body {
 	margin: 5px auto 0 auto;
   border: 1px solid black;
   overflow-x: auto;
+  border: 1px solid black;
 }
 /* Header CSS */
 #header {
 	width: 948px;
     height: 75px;
     margin: 5px 5px 5px 5px;
+    border: 1px solid black;
 }
 #header h1 {
   font-size: 325%;
