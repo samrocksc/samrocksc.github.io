@@ -34,7 +34,7 @@ body {
 /*Menu CSS */
 #menu {
 	float: left;
-	width: 175px;
+	width: 100px;
   height: 375px;
   margin: 0 auto 5px 5px;
   border: 1px solid black;
@@ -48,7 +48,7 @@ body {
 /*Content CSS */
 #content {
 	float: right;
-	width: 735px;
+	width: 840px;
     margin: 0 5px 5px 0px;
     min-height: 375px;
     border: 1px solid black;
@@ -59,7 +59,7 @@ body {
   clear: right;
   bottom: 5px;
   width: 940px;
-  height: 50px;
+  height: 60px;
 	margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
   border: 1px solid black;
