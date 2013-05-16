@@ -6,22 +6,23 @@ body {
     font-size: 75%;
 }
 #container {
-	width: 960px;
-	margin: 5px auto 0 auto;
-  border: 1px solid black;
-  overflow-x: auto;
-  border: 1px solid black;
+    width: 960px;
+    margin: 5px auto 0 auto;
+    border: 1px solid black;
+    overflow-x: auto;
+    border: 1px solid black;
 }
 /* Header CSS */
 #header {
 	width: 948px;
-    height: 75px;
+    height: 125px;
     margin: 5px 5px 5px 5px;
     border: 1px solid black;
 }
 #header h1 {
   font-size: 325%;
   font-weight: bold;
+  text-align: right;
 }
 #header h1 > a {
   text-decoration: none;
@@ -36,6 +37,7 @@ body {
 	width: 175px;
   height: 375px;
   margin: 0 auto 5px 5px;
+  border: 1px solid black;
 }
 .accordionButton {  
   width: 175px;
@@ -49,6 +51,7 @@ body {
 	width: 735px;
     margin: 0 5px 5px 0px;
     min-height: 375px;
+    border: 1px solid black;
 }
 
 /*Footer CSS*/
@@ -59,6 +62,7 @@ body {
   height: 50px;
 	margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
+  border: 1px solid black;
 }
 /*Links*/
 a:link{
