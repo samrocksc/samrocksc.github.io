@@ -93,3 +93,4 @@
 {"ts":1368738525347,"patch":[[{"diffs":[[0,"px;\n"],[-1,"  border: 1px solid black;"],[0,"\n}\n/"]],"start1":968,"start2":968,"length1":34,"length2":8}]],"length":1325,"saved":false}
 {"ts":1368738545202,"patch":[[{"diffs":[[0,"to;\n"],[-1,"    border: 1px solid black;"],[0,"\n}\n/"]],"start1":173,"start2":173,"length1":36,"length2":8}]],"length":1297,"saved":false}
 {"ts":1368738571900,"patch":[[{"diffs":[[0,"to;\n"],[-1,"    border: 1px solid black;\n"],[0,"    "]],"start1":122,"start2":122,"length1":37,"length2":8}]],"length":1268,"saved":false}
+{"ts":1368738675149,"patch":[[{"diffs":[[0,"x solid "],[-1,"black"],[1,"gray"],[0,";\n}\n\n/*F"]],"start1":755,"start2":755,"length1":21,"length2":20}]],"length":1267,"saved":false}
