@@ -81,6 +81,11 @@ a:hover{
       opacity: 0.5;
       }
 
+/*code example text areas*/
+.example {
+    outline: none;
+    resize: none;
+}
 
 
 
