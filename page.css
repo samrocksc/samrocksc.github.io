@@ -3,13 +3,13 @@ body {
     font-size: 75%;
 }
 #container {
-    width: 610px;
+    width: 700px;
     margin: 5px auto 0 auto;
 
 }
 /* Header CSS */
 #header {
-	width: 600px;
+	width: 100%;
     height: 125px;
     margin: 5px 5px 5px 5px;
 }
@@ -41,7 +41,7 @@ body {
 /*Content CSS */
 #content {
 	float: right;
-	width: 520px;
+	width: 675px;
     margin: 0 5px 5px 0px;
     padding: 5px 5px 5px 5px;
     min-height: 375px;
@@ -52,7 +52,7 @@ body {
 #footer {
   clear: right;
   bottom: 5px;
-  width: 548px;
+  width: 100%;
   height: 60px;
 	margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
