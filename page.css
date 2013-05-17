@@ -67,6 +67,7 @@ a:visited{
     color: black
 }
 a:hover{
+  opacity: 0.5;
 }
 /*setting up fade classes*/
 .fade {
