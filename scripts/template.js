@@ -18,8 +18,8 @@
             { "class": "accordionLink", "title": "", "content": "<a href='blog.html'>Blog</a>"},
             { "class": "accordionButton", "title": "", "content": "Writings"},
             { "class": "accordionContent", "title": "", "content": "<a href='code'>Code</a><br/><a href='rants.html'>Rants</a><br/><a href='coffee.html'>Coffee</a><br/><a href='fantasy.html'>Fantasy</a>"},
-            { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Links</a>"},
-            { "class": "accordionLink", "title": "", "content": "<a href='index.html'>Contact</a>"},
+            { "class": "accordionLink", "title": "", "content": "<a href='links.html'>Links</a>"},
+            { "class": "accordionLink", "title": "", "content": "<a href='mailto:samrocksc@gmail.com?Subject=shoutinginfrench.com'>Contact</a>"},
             ],
             links2: [
             
