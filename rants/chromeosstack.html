@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>/home/ | shoutinginfrench</title>
+    	<meta name="author" content="Sam Clark" />
+    	<meta name="keywords" content="shoutinginfrench is a website made by Sam Clark" />
+    	<meta name="description" content="shoutinginfrench, docpad, coffee, sam, sam clark, coffee, phoenix, arizona, blog, local, sam c, samrocksc" />
+    	<link  rel="stylesheet" href="/css/main.css" />
+		<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script defer="defer"  src="/js/fademenu.js"></script>
+		<script defer="defer"  src="/js/analytics.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<a href="/"><h1 class="fade">/ s h o u t i n g f r e n c h /<img class="fade" src="/img/header.png"/></h1></a>
+		</div>
+		  <div id="menu">
+  		<div class="accordionLink"><a href="/index.html">Home</a></div>
+			<div class="accordionButton">About</div>
+			<div class="accordionContent" style="display:none ;">
+				<a href="/about/sam.html">Sam</a><br/>
+				<a href="/about/resume.html">Resume</a><br/>
+				<a href="/about/business.html">Businesses</a>
+			</div>
+			<div class="accordionButton">Writings</div>
+			<div class="accordionContent" style="display:none ;">
+				<a href="/rants.html">Rants</a><br/>
+				<a href="/coffee.html">Coffee</a><br/>
+				<a href="/fantasy.html">Fantasy</a><br/>
+			</div>
+			<div class="accordionLink"><a href="mailto:samrocksc@gmail.com?Subject=Hello%20again">Contact</a></div>
+		</div>
+
+		<div id="content">
+			<h1>My Chrome OS Software Stack</h1>
+<p>Chrome OS has now been amongst us for two years now, and folks are still not quite sure how to treat it.  Is it a toy? Is it a tool? Is it for show or for fun?  When I first unloaded my Samsung armhf Chromebook back in December I was unleashed into a whole new world.  It felt like an incomplete world though.  Where was my ability to do all the things that I NEEDED to get done.  Modifying images was &quot;okay&quot;, but not complete.  Coding was &quot;okay&quot;, but it was still hassle to do.  A bit of a background I have used Linux as an end-user since I was 16, and it has been my primary OS since about 1998.  Chrome OS felt like a linux machine, but with a huge chunk of its soul missing!</p>
+<p>I set out on a quest to turn the ChromeOS into a functioning member of society via a software stack.  Eventually I would like to see the dev team at Chrome heed what they are seeing be emulated and make it a hard coded member of the Chrome OS.</p>
+<p>At the time of this writing I was using the Samsung armhf architecture chromebook.  I am writing this guide to keep myself, and you up to date on how to create a development atmosphere within Chrome OS.  I want to preface this by saying that in my experience so far having a fast browser has been a lot more important than having the flash and bang of a desktop environment provided by linux. Everything that needs to be done in linux can be done through the browser.  This guide is being written for all architectures where some software may not be written yet.  I would highly recommend to any convert to Chromeos as a development atmosphere learning how to use VIM.</p>
+<p>This is going to be work in progress, and hopefully I can update it frequently for you folks as I find better tools.  I will also include some howto&#39;s with some of the software that is difficult to install:</p>
+<p><em>since ChromeOS is built to work in the cloud, I have chose to install almost everything from the cloud via compiling bleeding edge github repos</em></p>
+<h2>Sam&#39;s ChromeOS Software Stack</h2>
+<ol>
+<li>Enable Dev Mode on Chromebook<ul>
+<li>You can find out how to change your chromebook to dev mode by visiting this <a href="http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices">link</a></li>
+</ul>
+</li>
+<li>Install <a href="https://github.com/dnschneid/crouton">Crouton</a> w/e17 support(we keep a window manager, but not a desktop environment, we want to use ChromeOS to its potential, not a DE).<ul>
+<li>You can find more about crouton here: <a href="https://github.com/dnschneid/crouton"><a href="https://github.com/dnschneid/crouton">https://github.com/dnschneid/crouton</a></a>.</li>
+<li>Use this script for enlightenment: <strong>sudo sh -e ~/Downloads/crouton -t e17</strong></li>
+</ul>
+</li>
+<li>Now you have a stable chroot installed, but we&#39;re not even going to use that fancy window manager.  In fact if you can use a chrome app like pixlr, you could just install the &quot;cli&quot; command line interface! Let&#39;s get into our shell!<ul>
+<li>Create a new tab with <strong>Ctrl+Alt T</strong>.</li>
+<li><strong>shell</strong>-&gt;<strong>sudo enter-chroot</strong></li>
+<li>type &#39;<strong>ls</strong>&#39; to see your working directory.</li>
+</ul>
+</li>
+<li>Initial apt-get installs:<ul>
+<li>build-essentials</li>
+<li>checkinstall</li>
+</ul>
+</li>
+<li>Create a software directory in your chroot at /usr/loca/src.  After installing git I would just pull all needed Apps here.</li>
+<li>Download/Install git from this <a href="https://code.google.com/p/git-repo/">google repo</a>.<ul>
+<li>build from scratch utilizing checkinstall to create a .deb for easy update and/or removal with dpkg.</li>
+</ul>
+</li>
+<li>Install Vim/Pathogen<ul>
+<li>sudo apt-get install vim</li>
+<li>Use this <a href="https://github.com/tpope/vim-pathogen">Vim Pathogen Howto</a> to install Pathogen and VIM and add any needed Syntax Repo&#39;s.<ul>
+<li>The most useful is probably coffeescript(as it adds several other syntaxes by default).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Installing node.js<ul>
+<li><strong>git clone <a href="https://github.com/joyent/node.git">https://github.com/joyent/node.git</a></strong></li>
+<li><em>If using armhf software it is important to use &quot;<strong>/configure --without-snapshot</strong>&quot; to disable v8 snapshot</em></li>
+</ul>
+</li>
+<li><p>Bells &amp; Whistles</p>
+<ul>
+<li><strong>sudo apt-get install htop</strong> - used to view what processes you currently have running in linux</li>
+<li><p><strong>sudo apt-get install tmux</strong> - who wants one million chrometabs of linux terminals when you can just split your screen!  Learn how to develop in vim and you can have a screen that looks like this:</p>
+<p><a href="/images/btmuxscreen1.png" title="tmux"><center><img src="/images/btmuxscreen1.png" width="300px"></center></a></p>
+</li>
+</ul>
+</li>
+</ol>
+
+		</div>
+		<div id="footer">
+			<a href="/index.html">2013 shoutinginfrench</a>  || Sam Clark  ||<a href="mailto:samrocksc@gmail.com?Subject=Hello%20again">samrocksc at gmail.com</a>
+			<br/><br/>
+			<a href="http://www.digg.com/submit" target="_blank"><img src="/img/digg.png" class="fade"></a>
+			<a href="http://facebook.com/shoutinginfrench" target="_blank"><img src="/img/fb.png" class="fade"></a>
+			<a href="" target="_blank"><img src="/img/gplus.png" class="fade"></a>
+			<a href="http://www.twitter.com/samrocksc" target="_blank"><img src="/img/twitter.png" class="fade"></a>
+		</div>
+	</div>
+
+</body>
+</html>
