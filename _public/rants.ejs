@@ -1,0 +1,4 @@
+<% for(var slug in public.posts.rants._data){ %>
+  <a href="/posts/<%= slug %>"><%= public.posts.rants._data[slug].title %></a><br/>
+  <%- partial("posts/" + slug) %>
+<% }; %>
