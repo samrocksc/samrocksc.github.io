@@ -36,23 +36,146 @@
 			<h2>/Coffee/</h2>
 
 
-  <a href="/posts/chromeosstack">My ChromeOS Stack</a><br/>
-  
+  <a href="/posts/rants/chromeosstack">My ChromeOS Stack</a><br/>
+  <h1>My Chrome OS Software Stack</h1>
+<p>Chrome OS has now been amongst us for two years now, and folks are still not quite sure how to treat it.  Is it a toy? Is it a tool? Is it for show or for fun?  When I first unloaded my Samsung armhf Chromebook back in December I was unleashed into a whole new world.  It felt like an incomplete world though.  Where was my ability to do all the things that I NEEDED to get done.  Modifying images was &quot;okay&quot;, but not complete.  Coding was &quot;okay&quot;, but it was still hassle to do.  A bit of a background I have used Linux as an end-user since I was 16, and it has been my primary OS since about 1998.  Chrome OS felt like a linux machine, but with a huge chunk of its soul missing!</p>
+<p>I set out on a quest to turn the ChromeOS into a functioning member of society via a software stack.  Eventually I would like to see the dev team at Chrome heed what they are seeing be emulated and make it a hard coded member of the Chrome OS.</p>
+<p>At the time of this writing I was using the Samsung armhf architecture chromebook.  I am writing this guide to keep myself, and you up to date on how to create a development atmosphere within Chrome OS.  I want to preface this by saying that in my experience so far having a fast browser has been a lot more important than having the flash and bang of a desktop environment provided by linux. Everything that needs to be done in linux can be done through the browser.  This guide is being written for all architectures where some software may not be written yet.  I would highly recommend to any convert to Chromeos as a development atmosphere learning how to use VIM.</p>
+<p>This is going to be work in progress, and hopefully I can update it frequently for you folks as I find better tools.  I will also include some howto&#39;s with some of the software that is difficult to install:</p>
+<p><em>since ChromeOS is built to work in the cloud, I have chose to install almost everything from the cloud via compiling bleeding edge github repos</em></p>
+<h2>Sam&#39;s ChromeOS Software Stack</h2>
+<ol>
+<li>Enable Dev Mode on Chromebook<ul>
+<li>You can find out how to change your chromebook to dev mode by visiting this <a href="http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices">link</a></li>
+</ul>
+</li>
+<li>Install <a href="https://github.com/dnschneid/crouton">Crouton</a> w/e17 support(we keep a window manager, but not a desktop environment, we want to use ChromeOS to its potential, not a DE).<ul>
+<li>You can find more about crouton here: <a href="https://github.com/dnschneid/crouton"><a href="https://github.com/dnschneid/crouton">https://github.com/dnschneid/crouton</a></a>.</li>
+<li>Use this script for enlightenment: <strong>sudo sh -e ~/Downloads/crouton -t e17</strong></li>
+</ul>
+</li>
+<li>Now you have a stable chroot installed, but we&#39;re not even going to use that fancy window manager.  In fact if you can use a chrome app like pixlr, you could just install the &quot;cli&quot; command line interface! Let&#39;s get into our shell!<ul>
+<li>Create a new tab with <strong>Ctrl+Alt T</strong>.</li>
+<li><strong>shell</strong>-&gt;<strong>sudo enter-chroot</strong></li>
+<li>type &#39;<strong>ls</strong>&#39; to see your working directory.</li>
+</ul>
+</li>
+<li>Initial apt-get installs:<ul>
+<li>build-essentials</li>
+<li>checkinstall</li>
+</ul>
+</li>
+<li>Create a software directory in your chroot at /usr/loca/src.  After installing git I would just pull all needed Apps here.</li>
+<li>Download/Install git from this <a href="https://code.google.com/p/git-repo/">google repo</a>.<ul>
+<li>build from scratch utilizing checkinstall to create a .deb for easy update and/or removal with dpkg.</li>
+</ul>
+</li>
+<li>Install Vim/Pathogen<ul>
+<li>sudo apt-get install vim</li>
+<li>Use this <a href="https://github.com/tpope/vim-pathogen">Vim Pathogen Howto</a> to install Pathogen and VIM and add any needed Syntax Repo&#39;s.<ul>
+<li>The most useful is probably coffeescript(as it adds several other syntaxes by default).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Installing node.js<ul>
+<li><strong>git clone <a href="https://github.com/joyent/node.git">https://github.com/joyent/node.git</a></strong></li>
+<li><em>If using armhf software it is important to use &quot;<strong>/configure --without-snapshot</strong>&quot; to disable v8 snapshot</em></li>
+</ul>
+</li>
+<li><p>Bells &amp; Whistles</p>
+<ul>
+<li><strong>sudo apt-get install htop</strong> - used to view what processes you currently have running in linux</li>
+<li><p><strong>sudo apt-get install tmux</strong> - who wants one million chrometabs of linux terminals when you can just split your screen!  Learn how to develop in vim and you can have a screen that looks like this:</p>
+<p><a href="/images/btmuxscreen1.png" title="tmux"><center><img src="/images/btmuxscreen1.png" width="300px"></center></a></p>
+</li>
+</ul>
+</li>
+</ol>
 
-  <a href="/posts/granite-mountain">A Different Breed</a><br/>
-  
 
-  <a href="/posts/iraq-recollections">Iraq Recollections</a><br/>
-  
+  <a href="/posts/rants/granite-mountain">A Different Breed</a><br/>
+  <h1>A Different Breed</h1>
+<p>So, I&#39;m going to write this the day after one of the most tragic incidents I&#39;ve ever had the chance of thanking my lucky stars over.  For anyone that doesn&#39;t know me, I&#39;m a bit of a lucky dude and I&#39;ve lived a pretty charmed life.  I&#39;ve never been through anything super horrendous, while taking a LOT of chances.  I&#39;ve been in the US. Army, the Marine Corps, and I did some time as a Wildland Firefighter.</p>
+<p>Now as it is quickly becoming common knowledge, yesterday there was a Hotshot Squad called Granite Mountain Hotshots, that was burned over and killed 19 of its 20 members.  Honestly folks...I want to share this story mainly because it&#39;s absolutely interesting.</p>
+<p>Three years ago I spent a summer on a Wildland Firefighting Type III engine in Tonto Basin, based out of Punkin Center next to the Roosevelt Lake Dam.  It was a pretty incredible summer, and the knowledge I learned there and the folks that I met were amazing and to this day I really don&#39;t think I&#39;ve had quite the amazing experience as I did that summer.  I always felt as if I was an outsider looking in(maybe it was because I was a rookie and in a club full of boys born and bred to hike mountains).</p>
+<p>Let me start off by describing my impression of a Hot Shot: Hot Shot&#39;s are kind of super human, they are IN shape.  They aren&#39;t impressive, they aren&#39;t even really very fancy.  A majority of hotshots are just simple men with simple mechanics and they can run for days, and hike for years.  Some are short, some are tall, more often than not they aren&#39;t even that muscular.  The one defining thing I have found about most Hot Shot is that he doesn&#39;t really complain.  </p>
+<p>I come from the culture of the Marine Corps, where the THING to do is to complain.  There isn&#39;t a lot of it in wild land firefighting.  In fact I would say it is in fact a pride point that there isn&#39;t a lot of it.  If there is complaining it&#39;s normally very light hearted.  People do wild land firefighting for a lot of reasons, but more often than not the main reason is that they LOVE good work.  You can make okay money, but it&#39;s nothing impressive.  You can go on a lot of adventures, but you won&#39;t be doing a lot but being in nature on those adventures.  More often than not, you are training really hard, and having both your brain and your body put to the test during wildland firefighting.</p>
+<p>I was only on a engine crew, but even that had merit.  I&#39;ve always told folks that were young and looking to join the military this &quot;I worked more hours and harder days in one week, not on a fire than I did in a month in the Marine Corps in the field&quot;.  I mean every single word when I say that.  Your week basically consists of having your engine ready, driving around looking for fires.  If there aren&#39;t fires, and your on the clock....you&#39;re busy.  You get a one hour lunch break.</p>
+<p>My boss in the Forest Service was a former Hot Shot for both Globe &amp; Payson.  My other boss had been doing the fire engine thing for about 7 years, his name was Kyle.  Kyle was a goofy guy, with a keen intelligence in almost all things fire.  He had been in fire since he was 18 I think.  He had lived in Forest Service provided housing, and had spent a LOT of time for the Forest Service.  He wasn&#39;t very serious mannered, but damn did he know how to do everything well. </p>
+<p>I would like to think that my summer working with those two fellows was probably the keenest trained I have ever been in my life.  If you asked me any question related to my job I could answer it.  If you asked me almost any question related to my bosses job, I could answer it(not all the way right, but I could get a lot of them).  I was like a sponge.  There is nothing to do but learn in the Forest Service.</p>
+<p>In the hundreds of different courses offered in Wildland Firefighting there is a common theme amongst them all, and that is history.  History has made it what it is today.  Fire Fighting wasn&#39;t always as safe as it is today.  In fact, it&#39;s still not safe.  I do believe in Canada they haven&#39;t even adopted Fire Shelters or protective equipment standards.  In the United States and general forestry, you are the living embodiment and monument to those that have dug line before you.</p>
+<p>When folks die in fire, they aren&#39;t grieved for too long.  More than likely the incident will be reviewed, analyzed, and reviewed one million more times each time by a different peer in the field.  Books will be written about those incidents.  Everytime someone dies in the forest service, someone learns.</p>
+<p>It&#39;s sad to say, but at the same time it&#39;s an amazing monument and testament to the fallen.  What better way to be remembered than by helping save the lives of those who will come after you.  We can build hundreds of monuments, we can name thousands of baseball fields, but ultimately the ability to save lives and do good in a long term and perhaps historical nature is in fact the legacy of the fallen fire fighter.</p>
+<p>When I was bored in fire fighting.  I read books about fires.  I read books about folks telling stories about having to shelter up.  I read books about the folks that did survive, and I also read books about the folks that did not survive.  I read books about the successes and about failures.  For being at the bottom of the totem pole in wildland firefighting, it was just amazing to see 18 year old young men around me grow with a maturity much faster than I had witnessed in the military.</p>
+<p>Today, we learned that 19 folks died in a fire from the Granite Mountain Hot Shots.  It&#39;s only been three seasons since I left the engine crew, but I remember noticing the subtle differences about the different types of crews when I was out.  Hot shot crews from Payson, Gila, Geronimo, Granite Mountain....all just absolutely insanely good at what they did.  Payson Hot Shots were elite, they looked like the special forces of the civilian world.  Filthy dirty, stinky monuments to what it means to really own your life. Geronimo Hot Shots were always very stalwart I noticed.  The Globe Hot Shots were the fun guys, but you could tell they were good at what they did.  The Pleasant Valley folks were from the boonies, and their fun light blue hats always let you know they were around.  You would see buggies from the Granite Mountain Hot Shot Crews roll into the fire camp and you would see men that knew what they needed to get done to make the next day go successfully.</p>
+<p>Hot Shots are purposed folk.  They also carry legacies, legacies that no Foreman or Superintendent is ever going to let them forget.  Legacies that it isn&#39;t hard to buy into, they are pride points.  No one joins a hot shot crew because they did not want to.  Every man on a Hot Shot Crew KNOWS what he&#39;s going to be doing, and KNOWS what they are in for.  It&#39;s a different breed to observe these folks in action.</p>
+<p>So today we bid farewell to the Granite Mountain Hot Shot Crew.  It&#39;s a shame that so many men lost their lives.  I think one thing that&#39;s often said without thinking is &quot;without purpose&quot;.  I would beg to differ with any that would make this statement.  The bottom line is the men that lost their lives yesterday didn&#39;t lose them without purpose.  They lost their lives doing something not a lot of American&#39;s will ever have the ability to do.  They did something that no one in the military will ever do.  Through the power of pure good will they were doing something that had no negatives.  They were doing the right thing, and the good thing with pretty much no negative repercussions.  It&#39;s a hard thing to do.  Some would argue nature would disagree.  I don&#39;t think that is the case.  I think nature would say self-preservation is just as important.</p>
+<p>I didn&#39;t know any of those fellahs that died.  I do know their type, and I know what they are like.  If there is any in the United States worthy of being called a hero, let us bypass the military, let us bypass the police.  Let&#39;s look towards the wildland firefighters.  They are the some of the hardest training, dirtiest, most awesome folks we could ever imagine.  They are the apex of humanity in a nation where we have become out of touch with reality. </p>
+<p>I can only hope that going forward we do not sully their names with political banter.  I have always said that the Forest Service may in fact be the only organization made by our government that knows how to get the job done.  I hope they will let them do their jobs here and learn from what happened to those men yesterday and apply those lessons forward so that their monuments aren&#39;t material in nature, but a lasting legacy of survival for those to come.</p>
+<p>7/1/2013
+Sam Clark</p>
 
-  <a href="/posts/military-memories">Military Memories</a><br/>
-  
 
-  <a href="/posts/quitting-the-blog">Quitting The Blog</a><br/>
-  
+  <a href="/posts/rants/iraq-recollections">Iraq Recollections</a><br/>
+  <h1>/March 2013 the beginning of the iraq war/</h1>
+<p>Sam Clark</p>
+<p>These are really good slides, especially the first ones as I remember them a lot. I remember the night it all happened when I was sitting in The Paisley Violin on Roosevelt with David Fuller and if I remember right he had a bottle of whiskey with Dave #2 that evening. I remember sitting there thinking &quot;man I hope this doesn&#39;t happen, but if it does I know what I&#39;m doing&quot;. I remember the whole &quot;shock &amp; awe&quot; verbage being thrown around.</p>
+<p>I remember feeling super bummed because all the bro&#39;s I had from the time spent in the Army and how they were probably on that Kuwait border, it was only 3.5 years from my enlistment in the Army. I also remember feeling shame that I wasn&#39;t there, and even though I disagreed I needed to make sure I would do my part. A shame that really led to my eventual enlistment in the Marines in 2005. Sometimes when things happen of that magnitude it&#39;s our job to find out where we fit in the whole grand scheme. Sometimes we find ourselves choosing paths: protesting(god bless you), supporting from home, participating, or for the most part just carrying on day to day life functions.</p>
+<p>It&#39;s strange how war affected so many people, and we still view it as forms of pop culture, but I think it&#39;s time to put the whole situation into the melting pot of history. Afghanistan, it will be the same when it ends some day. Maybe it&#39;s good to not make generalizations about those who fought, and remember that Iraqi or American they were just human beings who thought they were right. Sometimes we must accept that fact that as human beings we are prone to war, accept it and move on.</p>
+<p><a href="http://www.cnn.com/2013/03/15/world/gallery/iraq-war/index.html?hpt=hp_c1" title="Iraq War Article">CNN Article on Iraq War</a></p>
 
-  <a href="/posts/top10restaurants">Top 10 Restaurants</a><br/>
-  
+
+  <a href="/posts/rants/military-memories">Military Memories</a><br/>
+  <h2>3/18/2013 Memories of The Military</h2>
+<p>When I was growing up I always wanted to be in the military. I was always playing games with Jamie Anderson on the farm that were focused around shooting with stick guns and building forts that I saw on television. I grew up a pretty active boy. My parents were extremely supportive of my imagination, and boy did I have one!</p>
+<p>I have a lot of scars from childhood.....A LOT. I have so many scars that my mother got reported to SRS(the Kansas version of CPS) for child abuse. Falling face first on a nail claiming &quot;I fell off of my space ship&quot; at the age of 4. Little did they know that my scars were coming from good ol&#39; fun growing up on the farm. During the flood of 1993 my friend Jason Castillo and I were re-enacting Teenage Mutant Ninja Turtle scenes and he threw a ninja star(shard of glass) at me and it sliced open my shin. My mother was not impressed... Once I thought I was the Tony Hawk of Pogo Balls for about five minutes until I sliced open the back of my head and gained a pretty nasty concussion.</p>
+<p>Anyways it only made sense that I would eventually join the military. I eventually did by enlisting in the Army at the ripe age of one day into being 17 years old with my parents consent. I went to basic training at Fort Knox, Kentucky in between my Junior and Senior year of high school. I really didn&#39;t accept the amount of responsibility I had placed on myself at this time, and of course when I got back I screwed up royally. The plan was to commit to active duty army after I had completed High School.</p>
+<p>Being the young dumb idiot I was I managed to break my ankle one month before I graduated high school. This would lead to my administrative separation from the Army. I felt really guilty about this. If there was one thing in my life I could take back it was going out to skate that morning. When I got kicked out of the Army I hit this really bad depression streak for about a year and a half, and at the age of 20 I moved to Phoenix transferring with my company ALLTEL at the time.</p>
+<p>I felt extremely guilty about and to this day I still feel extremely guilty. I did however choose the higher road of redemption. In May of 2005 I had decided that I had enough of feeling guilty. I quit my job of almost five years and decided I would go finish my obligation.</p>
+<p>Anyone who knows me has heard this story before, but I&#39;ll write it down this time. I quit my job 15 minutes after winning some sort of employee award, the executive management of the company had given me a way too small polo shirt. I still have it to this day, and now I fit in it. I kind of gauge my body of my ability to fit into this shirt. I wrote my two weeks up stating &quot;it&#39;s time for me to go back to the military&quot;.</p>
+<p>The next week I sold my car and committed to losing weight. I was living in a pretty ramshackle spot at Buckeye &amp; Central in Phoenix. I weighed about 320 lbs and I had horrible self-image problems. I started bicycling every single day and rationing my food intake considerably. I had a rather reasonable stockpile of money, so I decided it was now or never. My best buddy Dave let me move in with he and his wife under the pretense that when I did lose the weight, I would be gone and in the military. I&#39;m not one to take a challenge like that lightly!</p>
+<p>Every night I would watch television eating cottage cheese and doing dips between two chairs watching television followed by a run in a sweater in the 100 degree heat of the evening to sweat out some water weight. Every morning I would drink some chocolate milk, pound some water and ride a bicycle from 83rd Ave &amp; McDowell 10 miles to Central Phoenix to Rodriguez Boxing Gym. I trained every damn day at that boxing gym. I would run in a sauna suit for a mile, come back and speed bag for hours. Anything I could do to burn the weight off. I knew money wouldn&#39;t last forever, and I had a goal. Slowly 320 lbs turned into 280, 270, and then 220.</p>
+<p>At the weight of 220 I went to a local Army recruitment office to see if they were interested in me joining as the peak of the Iraq war was currently happening. I was told by the Army recruiters that I had no chance of ever joining again due to the administrative separation. I&#39;m not easily deterred from goals, so I went next door to the Marine Corps recruiting office. I didn&#39;t really know what the Marine Corps was. I didn&#39;t know exactly what kind of work they did in the military. I didn&#39;t really even know any Marines. I just knew boot camp was going to be tough.</p>
+<p>The Marine recruiter told me I needed to get to 173 pounds and pass tests including hearing. I&#39;ve never had good hearing, so I knew this was going to be a hard thing to do. He told me I could get a waiver if I could get enough tests passed stating by audiologists that I could hear good enough. I went to a Beltone up the road and through some persuasion, I got the gal to give me the okay that my hearing was good. My hearing is horrible.....everyone knows this. Anyways, that task over, it was time to finish and join. I joined on a super extra hot morning on October 19th, 2005. I ran that morning in a sauna suit to lose about 5lbs of water weight. My recruiter picked me up at 3am, all of my personal belongings had been moved into the attic of a buddies place. I was set to go. I went to the Entry Processing center, and got checked out and okayed to join. I swung into the oath room and threw my right hand up and spoke the words that are the oath of the Marine Corps.</p>
+<p>For a lot of 18 year olds(and myself included as I had done this once before) the oath of the Marine Corps doesn&#39;t mean a lot. This was my second chance though, and I had something to prove. I remember the solitude of my words and exactly how real they felt to me as I spoke them. I had earned my chance to make amends for what I had failed at previously. I put my hand down and my recruiter who was a really nice guy came over and shook my hand and said it was time to go to boot camp.</p>
+<p>I arrived at Marine Corps Recruit Depot, San Diego that evening and got off the plane and sat in the USO of the San Diego Airport with a bunch of other recruits and some Marines returning from leave etc. Boot Camp means a lot of different things to different people. For some of the kids there they were achieving their life long dream. For me it was just another cycle of life, but this was something I had to do. I didn&#39;t really join the Marine Corps because I wanted to, I joined because I had to in order to make things right with myself. I really just wanted to get the next 4 years out of the way, go to war, and prove to myself, that I could do it.</p>
+<p>Boot Camp started that night, and I remember thinking to myself &quot;wow this is surreal, it&#39;s just like Full Metal Jacket&quot;. From standing in your underwear to marching in the barracks to the verbage. Everything about Marine Boot Camp was hard, mentally, physically, and emotionally. I remember standing ass naked in a 40 degree squad bay surrounded by 60 other ass naked comrades on Thanksgiving of 2005 listening to a Drill Instructor tell us how worthless we were until we graduated. I remember thinking to myself &quot;god damn can we end this shit already&quot;. I also remember the day that I gained my &quot;spirit&quot; so to say. It was 3AM and it was the end of the final task of the Marines called &quot;The Crucible&quot;. Three days, not a lot of food, and maybe 5 hours of sleep.</p>
+<p>We were sitting on our packs after a 15km hike in the dark staring at this mound called The Reaper. We were going to start up it at sun up and hike to the top down, and then 20km back to our barracks where we would become Marines. When the sun started coming up I realized it was a damn mountain! I also remember that my heart was pounding. I&#39;m not a big sucker for sentiment, but I realized that this was finally the time for redemption. The next 4 hours were going to be the true test of whether or not I would get my chance to finish my 4 years. I hiked up that asshole of a mountain. I saw about 8 kids quit halfway up. I also remember speeding up when I saw them because I knew they were gonna have to start boot camp over again, and I did NOT want to be naked with 60 other men ever again.</p>
+<p>We finished the hike and got back to the Squad bay and soon I had graduated from boot camp from the Marines. The thing is that sometimes it&#39;s good to write about our redmpetions and remember what we have done right in life and remember what we have done wrong. Remembering the wrong will help us know what we need to do in the future.</p>
+<p>Sam Clark.</p>
+
+
+  <a href="/posts/rants/quitting-the-blog">Quitting The Blog</a><br/>
+  <h1>Quitting The Blog</h1>
+<p>I am writing this now because I am removing my blogs from the internet.  It is something I realized today as I sit here today.  I am realizing that really the whole idea of blogging for your website may in fact finally have died finally.  There are so many blogging systems coming out.  </p>
+<p>Microblogging in the form of <a href="http://www.twitter.com">Twitter</a>, aggregated blogging in the form of <a href="http://www.tumblr.com">tumblr</a>, and the soon to be &quot;medium blogging&quot; in the form of <a href="http://www.medium.com">medium</a> are all showing signs of the dying trend of placing blogs on our website.  For approximately three years now, I have been leaving a copy of my blog from tumblr on my website.  This allowed to people what I was thinking and even some mini-writes.  It&#39;s rare though that I actually find the motivation to write about my life.</p>
+<p>A majority of my blogging has came in the form of tweets and facebook updates over the past five years.  It&#39;s time that we combine our ability to communicate into mediums that will combine society.</p>
+<p>With that, today I&#39;m going to pick my most favorite rants and writings from my tumblr feed, and recreate them as permanent files.  I think going forward this is the wave of the future.</p>
+<p>The idea of wordpress as a standalone website is slowly winding down.  Slowly it has been compressed into a huge bloated conglomerate of files that waste huge amounts of web resources for menial tasks.</p>
+<p>It&#39;s time to start looking with responsibility with the content we produce on the web, and recognizing where it should be shared.  Is our posting newsworthy?  Is it blogworthy?  Should it be syndicated, or should it be put into the aggregated pool?  Will the information we write today be pertinent in the future?  These are all things we should consider when we write and how we place it.</p>
+<p>Recently I had a programmer friend send me a video of a talk by a developer about the creation of his open source projects.  He spoke of how when he wrote in the open source and he didn&#39;t maintain it, it would become bloated.  I think the same thought process can be applied to blogging.  Perhaps its time to let go, and let our blogs roll with the tides of time, and start producing content that can stand the waves of time.  </p>
+<p>Keeping our articles updated may be just as important as the frequency at which we produce them. There can be no confusion that the web is becoming clogged and bloated with archaic writings that did not stand the tests of time.  I think we should remember that there is a reason blog rolls &quot;roll&quot;. </p>
+<p>-Sam</p>
+
+
+  <a href="/posts/rants/top10restaurants">Top 10 Restaurants</a><br/>
+  <h2>top 10 restauraunts</h2>
+<p>This is a never ending work in progress!</p>
+<p>So I was told today that I needed to compile my top 10 most favorite restaurants in Phoenix.  I went ahead and did so on my &quot;unique&quot; tastes.  Hope you enjoy!</p>
+<ol>
+<li>Mi patio - Phoenix</li>
+<li>El Norteno - Phoenix</li>
+<li>Diamonds - Mesa</li>
+<li>Hazelwood&#39;s Bar &amp; Grill - Phoenix</li>
+<li>Middle Eastern Bakery - Phoenix</li>
+<li>La Condessa - Phoenix</li>
+<li>Ranch Market - Phoenix</li>
+<li>Carly&#39;s - Phoenix</li>
+<li>Bragg&#39;s Pie Factory Diner - Phoenix</li>
+<li>Gallo Blanco - Phoenix</li>
+</ol>
+
 
 		</div>
 		<div id="footer">

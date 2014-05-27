@@ -1,6 +1,6 @@
 <h2>/Coffee/</h2>
 
 <% for(var slug in public.posts.rants._data){ %>
-  <a href="/posts/<%= slug %>"><%= public.posts.rants._data[slug].title %></a><br/>
-  <%- partial("posts/" + slug) %>
+  <a href="/posts/rants/<%= slug %>"><%= public.posts.rants._data[slug].title %></a><br/>
+  <%- partial("posts/rants/" + slug) %>
 <% }; %>

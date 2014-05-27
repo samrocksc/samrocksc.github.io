@@ -1,6 +1,7 @@
 <h2>/Fantasy/</h2>
 
 <% for(var slug in public.posts.fantasy._data){ %>
-  <a href="/posts/<%= slug %>"><%= public.posts.fantasy._data[slug].title %></a><br/>
-  <%- partial("posts/" + slug) %>
+  <a href="/posts/fantasy/<%= slug %>"><%= public.posts.fantasy._data[slug].title %></a><br/>
+  <%- partial("posts/fantasy" + slug) %>
 <% }; %>
+
