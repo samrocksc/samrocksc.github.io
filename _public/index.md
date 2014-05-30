@@ -4,5 +4,5 @@ Welcome to shoutinginfrench. This is the personal website for Sam Clark, and was
 
 This site is part blog, hobbyist coding, and information site about what I do and how I operate as a coffee shop owner.
 
-I recently stopped providing a blog roll from tumblr, you can read more about why I chose to do so [here] (/public/rants/death-to-blogs *death to blogs*). I hope you enjoy some of the ramblings and writings on the site. I update it semi-frequently.
+I recently stopped providing a blog roll from tumblr, you can read more about why I chose to do so [here](/public/rants/death-to-blogs). I hope you enjoy some of the ramblings and writings on the site. I update it semi-frequently.
 

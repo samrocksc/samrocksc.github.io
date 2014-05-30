@@ -19,7 +19,7 @@ Professional Experience
 * *Owner* | December 2010-Present
   * Accounting, Bookkeeping, Reporting, Payroll/Employment, Tax, and Logistical Management.
   * Design/Build/Own/Operate Lo Fi Coffee, 105 W. Main St, Mesa, AZ 85201(2011-Current).
-  * Design/Build/Own/Operate Mud Dauber Coffee, 2222 N. 16th St, Phoenix AZ 85006(2012-Current).
+  * Design/Build/Own/Operate Mud Dauber Coffee, 2222 N. 16th St, Phoenix AZ 85006(2012-2014).
 
 **Coffee & Tea Express**
 
